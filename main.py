@@ -24,7 +24,7 @@ def press_to_talk(mic_index, ask_func):
     mic = sr.Microphone(device_index=mic_index)
     
     with mic as source:
-        print("Press and hold any key to start recording...")
+        print("Press key to start recording...")
         input()  # Wait for any key press to start recording
         print("Recording started. Speak your message.")
         audio = r.listen(source)
